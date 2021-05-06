@@ -1,0 +1,74 @@
+body
+{
+    line-height:1.9;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{scoll-behavior:smooth;}
+.main-color{color: #3199ab}
+header
+{
+    padding-top:15px;
+    position: relative;
+    z-index: 1;
+}
+header:before
+{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../images/wave-lg.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.navbar a {color: #fff;}
+.navbar .nav-item
+{
+    margin-left: 1.5rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+.navbar .nav-link:hover,
+.navbar .home
+{border-bottom: 1px solid #fff;}
+
+.header .header-info {padding: 4rem 4rem 0 0;}
+.navbar .header-info p{color: #455a64;}
+
+/*Display*/
+.display-temp .search {width: 32%;}
+.display-temp #search-bar {
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+
+
+
+
+/* Start Subscribe*/
+.subscribe .subscribe-info {
+    width: 65%;
+}
+.subscribe .subscribe-img {
+    width: 35%;
+}
+.subscribe .subscribe-info p {
+    color: #455a64;
+}
+
+.subscribe .subscribe-info input{
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+.subscribe .subscribe-info .btn{
+    margin-left: 0.5rem;
+    border-radius: 25px;
+    padding: 10px 15px !important;
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Islam Abdelbasset">
+        <meta name="description" content="weather app">
+        <meta name="keywords" content="html,css,javascript,ajax,weather">
+        <title>Weather App</title>
+        <!-- Fontawesome Link -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/icon.png">
+    </head>
+    <body>
+        <header class="header" id="to-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg py-2">
+                    <a class="navbar-brand main-color" href="#">
+                        <img
+                                class="img-fluid"
+                                src="images/logo.png"
+                                width="50px"
+                                height="50px"
+                        />
+                        Weather
+                    </a>
+                    <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link home" href="#"
+                                >Home <span class="sr-only">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#search">Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mobileApp">Mobile App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-content my-5 py-50">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="header-info" id="about">
+                                <h2 class="main-color/mb-4">Weather App</h2>
+                                <p>
+                                    Having an up to date information about the weather helps us to
+                                    take well-read decisions. These weather apps constantly update
+                                    the forecasts for a day or hour or sometimes for even a
+                                    minute. These can be simply termed as the compact weather
+                                    devices, as they do not only tell about the temperature of
+                                    that specific region instead they can describe the accurate
+                                    time of the sunrise and sunset, the time of the rainfall,
+                                    humidity levels, etc.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="header-img">
+                                <img src="images/raining-animate-1.svg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="display-temp my-5 py-5" id="search">
+            <div class="container">
+                <div class="search m-auto">
+                    <input type="text" id="search-bar" class="w-100 mb-5" placeholder="&#xF002; Search City..."
+                           style="font-family:Arial, FontAwesome">
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="subscribe text-center my-5 py-5" id="subscribe">
+            <div class="container">
+                <div class="subscribe-container d-flex">
+                    <div class="subscribe-info pt-5">
+                        <div>
+                            <h4 class="main-color">Subscribe</h4>
+                            <p>Get daily weather updates, quotes & more..</p>
+                        </div>
+                        <input type="email" class="w-75" id="emailInput" placeholder="&#xf0e0;  Enter your email to subsribe.." style="font-family:Arial, FontAwesome">
+                        <div id="emailInputAlert" class="d-none text-danger my-3">Invalid Email Address</div>
+                        <button class="btn btn-info d-block mx-auto my-3" id="subscribeBtn">Subscribe</button>
+                    </div>
+                    <div class="subscribe-img">
+                        <img src="images/subscribe.png" class="img-fluid w-75 ml-5" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
