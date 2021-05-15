@@ -90,16 +90,191 @@
             </div>
         </header>
 
-        <section class="display-temp my-5 py-5" id="search">
+<!--        <section class="display-temp my-5 py-5" id="search" >-->
+<!--            <div class="container">-->
+<!--                <div class="search m-auto">-->
+<!--                    <input type="text" id="search-bar" class="w-100 mb-5" placeholder="&#xF002; Search City..."-->
+<!--                           style="font-family:Arial, FontAwesome">-->
+<!--                </div>-->
+<!--                <div class="temp-card shadow">-->
+<!--                    <div class="day-and-date d-flex justify-content-between">-->
+<!--                        <p id="today"></p>-->
+<!--                        <p id="today-date"></p>-->
+<!--                    </div>-->
+
+<!--                    <div class="temp-details ">-->
+<!--                        <p id="location"></p>-->
+<!--                        <div class="d-flex justify-content-between my-4">-->
+<!--                            <div class="pt-3">-->
+<!--                                <h2 id="today-degree" class="d-inline-block"></h2>-->
+<!--                                <h2 class="d-inline-block"><sup>o</sup>C</h2>-->
+<!--                            </div>-->
+<!--                            <img id="today-icon" width="90">-->
+<!--                        </div>-->
+<!--                        <p id="today-description"></p>-->
+<!--                        <div class="details">-->
+<!--                            <i class="fas fa-umbrella pr-1"></i>-->
+<!--                            <span id="humidty"><span></span>%</span>-->
+
+<!--                            <i class="fas fa-wind pr-1 pt-3"></i>-->
+<!--                            <span id="wind"><span></span>%</span>-->
+
+<!--                            <i class="fas fa-compass pr-1 pt-3"></i>-->
+<!--                            <span id="compass"><span></span>%</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="temp-card shadow">-->
+<!--                    <div class="day-and-date d-flex justify-content-between my-4">-->
+<!--                        <p id="nextDay"></p>-->
+<!--                        <p id="nextDate"></p>-->
+<!--                    </div>-->
+
+<!--                    <div class="temp-details">-->
+<!--                        <div>-->
+<!--                            <img id="nextDay-icon" width="90">-->
+<!--                        </div>-->
+<!--                        <h2 class="max-degree d-inline-block"></h2>-->
+<!--                        <h2 class="d-inline-block"><sup>o</sup>C</h2><br>-->
+<!--                        <p class="min-degree d-inline-block"></p>-->
+<!--                        <h2 class="d-inline-block"><sup>o</sup>C</h2>-->
+<!--                        <h2 class="nextDay-description"></h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="temp-card shadow">-->
+<!--                    <div class="day-and-date d-flex justify-content-between my-4">-->
+<!--                        <p class="nextDay"></p>-->
+<!--                        <p class="nextDate"></p>-->
+<!--                    </div>-->
+
+<!--                    <div class="temp-details">-->
+<!--                        <div>-->
+<!--                            <img class="nextDay-icon" width="90">-->
+<!--                        </div>-->
+<!--                        <h2 class="max-degree d-inline-block"></h2>-->
+<!--                        <h2 class="d-inline-block"><sup>o</sup>C</h2><br>-->
+<!--                        <p class="min-degree d-inline-block"></p>-->
+<!--                        <h2 class="d-inline-block"><sup>o</sup>C</h2>-->
+<!--                        <h2 class="nextDay-description"></h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </section>-->
+
+        <!------------------------ Start Display Temp ------------------------>
+        <section class="display-temp my-5 py-2" id="search">
             <div class="container">
                 <div class="search m-auto">
-                    <input type="text" id="search-bar" class="w-100 mb-5" placeholder="&#xF002; Search City..."
-                           style="font-family:Arial, FontAwesome">
+                    <input type="text" id="search-bar" class="w-100 mb-5" placeholder="&#xF002; Search City..." style="font-family:Arial, FontAwesome"/>
                 </div>
+                <div class="city-temp d-flex">
 
+                    <!-- Today's Card -->
+                    <div class="temp-card shadow">
+                        <div class="day-and-date d-flex justify-content-between">
+                            <p id="today"></p>
+                            <p id="today-date"></p>
+                        </div>
+
+                        <div class="temp-details">
+                            <p id="location"></p>
+                            <div class="d-flex justify-content-between my-4">
+                                <div class="pt-3">
+                                    <h2 id="today-degree" class="d-inline-block"></h2>
+                                    <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                                </div>
+                                <img id="today-icon" width="90"/>
+                            </div>
+                            <p id="today-description"></p>
+                            <div class="details">
+                                <i class="fas fa-umbrella pr-1"></i>
+                                <span id="humidty"></span> <span>%</span>
+
+                                <i class="fas fa-wind pl-3 pr-1"></i>
+                                <span id="wind"></span> <span>km/h</span>
+
+                                <i class="far fa-compass pl-3 pr-1"></i>
+                                <span id="compass"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Days Cards -->
+                    <div class="temp-card text-center shadow">
+                        <div class="day-and-date d-flex justify-content-between">
+                            <p class="nextDay"></p>
+                            <p class="nextDate"></p>
+                        </div>
+
+                        <div class="temp-details">
+                            <div>
+                                <img class="nextDay-icon" width="90"/>
+                            </div>
+                            <h2 class="max-degree d-inline-block"></h2>
+                            <h2 class="d-inline-block"><sup>o</sup>C</h2>
+                            <br>
+                            <p class="min-degree d-inline-block"></p>
+                            <p class="d-inline-block"><sup>o</sup>C</p>
+                            <p class="nextDay-description"></p>
+                        </div>
+                    </div>
+
+                    <div class="temp-card text-center shadow">
+                        <div class="day-and-date d-flex justify-content-between">
+                            <p class="nextDay"></p>
+                            <p class="nextDate"></p>
+                        </div>
+
+                        <div class="temp-details">
+                            <div>
+                                <img class="nextDay-icon" width="90"/>
+                            </div>
+                            <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                            <br>
+                            <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+                            <p class="nextDay-description"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <!------------------------ End Display Temp ------------------------>
 
+        <!------------------------ Start Download Mobile App ------------------------>
+        <section class="download-app py-3 my-5" id="mobileApp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="download-img text-center">
+                            <img class="img-fluid" src="images/download.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="download-info text-center mt-5">
+                            <h4 class="main-color mb-4">Mobile App</h4>
+                            <p class="mb-4">
+                                This weather app is one of best free weather apps with full
+                                features:
+                                <br>
+                                Local weather
+
+                                weather map (weather map service)
+
+                                and weather widgets.
+                            </p>
+                            <div class="download-btn mt-5">
+                                <button class="btn btn-info mr-2">Download Android</button>
+                                <button class="btn btn-info">Download iOS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ End Download Mobile App ------------------------>
 
 
 
